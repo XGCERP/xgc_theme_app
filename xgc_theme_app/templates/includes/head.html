@@ -1,0 +1,13 @@
+{% if head_html is defined -%}
+{{ head_html or "" }}
+{%- endif %}
+
+{%- if theme and theme.name != 'XGC-theme' -%}
+<link type="text/css" rel="stylesheet" href="/assets/xgc_theme_app/images/css/oneui.css">
+{%- endif -%}
+
+{%- if theme and theme.name == 'XGC-theme' -%}
+
+{%- for link in web_include_css %}
+{{ include_style(link) }}
+{%- endfor -%}

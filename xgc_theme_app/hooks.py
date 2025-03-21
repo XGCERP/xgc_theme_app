@@ -11,29 +11,31 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "xgc_theme_app",
-# 		"logo": "/assets/xgc_theme_app/logo.png",
-# 		"title": "Xgc Theme App",
-# 		"route": "/xgc_theme_app",
-# 		"has_permission": "xgc_theme_app.api.permission.has_app_permission"
-# 	}
-# ]
+ add_to_apps_screen = [
+ 	{
+ 		"name": "xgc_theme_app",
+ 		"logo": "/assets/xgc_theme_app/images/logo/xgclogo.png",
+ 		"title": "Xgc Theme App",
+ 		"route": "/xgc_theme_app",
+ 		"has_permission": "xgc_theme_app.api.permission.has_app_permission"
+ 	}
+ ]
 
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/xgc_theme_app/css/xgc_theme_app.css"
-# app_include_js = "/assets/xgc_theme_app/js/xgc_theme_app.js"
+app_include_css = "/assets/xgc_theme_app/css/oneui.css"
+app_include_js = "/assets/xgc_theme_app/js/oneui.app.min.js"
+app_include_js = "/assets/xgc_theme_app/js/setTheme.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/xgc_theme_app/css/xgc_theme_app.css"
-# web_include_js = "/assets/xgc_theme_app/js/xgc_theme_app.js"
+web_include_css = "/assets/xgc_theme_app/css/oneui.css"
+web_include_js = "/assets/xgc_theme_app/js/oneui.app.min.js"
+web_include_js = "/assets/xgc_theme_app/js/setTheme.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "xgc_theme_app/public/scss/website"
+website_theme_scss = "xgc_theme_app/public/scss/main.scss"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -97,53 +99,53 @@ app_license = "mit"
 # Name of the app being installed is passed as an argument
 
 # before_app_install = "xgc_theme_app.utils.before_app_install"
-# after_app_install = "xgc_theme_app.utils.after_app_install"
+ after_app_install = "xgc_theme_app.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "xgc_theme_app.utils.before_app_uninstall"
+ before_app_uninstall = "xgc_theme_app.utils.before_app_uninstall"
 # after_app_uninstall = "xgc_theme_app.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "xgc_theme_app.notifications.get_notification_config"
+ notification_config = "xgc_theme_app.notifications.get_notification_config"
 
 # Permissions
 # -----------
 # Permissions evaluated in scripted ways
 
 # permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
-# }
+ 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+ }
 #
-# has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
-# }
+ has_permission = {
+ 	"Event": "frappe.desk.doctype.event.event.has_permission",
+ }
 
 # DocType Class
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+ override_doctype_class = {
+ 	"ToDo": "custom_app.overrides.CustomToDo"
+ }
 
 # Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+ doc_events = {
+ 	"*": {
+ 		"on_update": "method",
+ 		"on_cancel": "method",
+ 		"on_trash": "method"
+ 	}
+ }
 
 # Scheduled Tasks
 # ---------------
